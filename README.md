@@ -1,10 +1,10 @@
 # PrimitivesLib
 
-A PHP library for working with domain primitives that provides utilities for validation, metadata extraction, and manipulation of value objects following a specific interface pattern.
+A PHP library for working with domain primitives that provides utilities for introspection, metadata, and manipulation of value objects that follow an implicit interface.
 
 ## What are Domain Primitives?
 
-Domain primitives are simple value objects that wrap primitive types (string, int, float, etc.) with domain-specific validation and meaning. They help prevent primitive obsession and make your code more expressive and type-safe.
+Domain primitives are simple value objects that wrap primitive scalar types (string, int, float, etc.) with domain-specific validation and meaning. They help prevent primitive obsession and make your code more expressive and type-safe.
 
 For example, instead of passing around raw strings for email addresses:
 ```php
