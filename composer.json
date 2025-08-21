@@ -2,16 +2,7 @@
     "name": "fasano/lib-primitives",
     "type": "library",
     "license": "MIT",
-    "keywords": [
-        "DDD",
-        "Hexagonal",
-        "Architecture",
-        "Controller",
-        "Command",
-        "Messenger",
-        "Ports",
-        "Interfaces"
-    ],
+    "keywords": ["DDD", "Rich Domain"],
     "authors": [
         {
             "name": "Nicolas Fasano",

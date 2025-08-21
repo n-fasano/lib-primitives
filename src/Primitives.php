@@ -26,8 +26,8 @@ use ReflectionProperty;
  */
 class Primitives
 {
-    private static array $reflections = [];
-    private static array $cache = [];
+    protected static array $reflections = [];
+    protected static array $cache = [];
 
     /**
      * Check if a class represents a domain primitive
