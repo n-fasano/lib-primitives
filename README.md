@@ -13,7 +13,7 @@ function sendEmail(string $email) // Requires checks
 
 You can use domain primitives:
 ```php
-function sendEmail(Email $email) // Trusted input
+function sendEmail(Email $email)  // Trusted input
 ```
 
 ## Installation
@@ -96,7 +96,7 @@ $code = new ProductCode('invalid'); // Throws InvalidArgumentException
 ```php
 use Fasano\PrimitivesLib\Primitives;
 
-$isPrimitive = Primitives::isPrimitive(Email::class); // true
+$isPrimitive = Primitives::isPrimitive(Email::class);    // true
 $isPrimitive = Primitives::isPrimitive(stdClass::class); // false
 ```
 
@@ -106,7 +106,7 @@ $metadata = Primitives::getMetadata(Email::class);
 echo $metadata->name;        // "Email Address"
 echo $metadata->example;     // "user@example.com"
 echo $metadata->description; // "A valid email address for user communication"
-echo $metadata->type; // "string"
+echo $metadata->type;        // "string"
 echo $metadata->fqcn;        // "MyApp\Domain\User\Property\Email"
 ```
 
