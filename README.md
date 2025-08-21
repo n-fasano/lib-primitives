@@ -60,7 +60,7 @@ use Fasano\PrimitivesLib\Metadata\Attribute\Description;
 #[Name('Email Address')]
 #[Example('user@example.com')]
 #[Description('A valid email address for user communication')]
-class Email
+readonly class Email
 {
     public function __construct(public string $value)
     {
@@ -78,7 +78,7 @@ For string-based primitives, a base class is provided that can be used for inspi
 ```php
 use Fasano\PrimitivesLib\StringPrimitive;
 
-class ProductCode extends StringPrimitive
+readonly class ProductCode extends StringPrimitive
 {
     public static function check(string $value): bool
     {
