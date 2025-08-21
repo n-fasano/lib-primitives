@@ -19,7 +19,7 @@ function sendEmail(Email $email) // Trusted input
 ## Installation
 
 ```bash
-composer require fasano/primitives-lib
+composer require fasano/lib-primitives
 ```
 
 ## Requirements
