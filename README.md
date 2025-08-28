@@ -1,6 +1,6 @@
 # PrimitivesLib
 
-A PHP library for working with domain primitives that provides utilities for introspection, metadata, and manipulation of value objects that follow an implicit interface.
+A PHP library that defines an implicit interface for domain primitives and provides utilities to detect them, along with metadata and reflection features.
 
 ## What are Domain Primitives?
 
