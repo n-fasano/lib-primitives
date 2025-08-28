@@ -197,11 +197,11 @@ class Primitives
         return $valueParameter;
     }
 
-    private static function getAttribute(string $fqcn, string $attrFqcn): mixed
+    private static function getAttribute(string $fqcn, string $attrFqcn): ?object
     {
-        $reflectionAttr = self::_reflection($fqcn)->getAttributes($attrFqcn)[0] ?? null;
-
-        return $reflectionAttr->newInstance();
+        return self::_reflection($fqcn)
+            ->getAttributes($attrFqcn)[0]
+            ?->newInstance();
     }
 
     private static function _reflection(string $fqcn): ReflectionClass
